@@ -10,11 +10,29 @@
 
 <body>
   <!-- NAVIGATION -->
-  <header>
+  <header class="relative">
     <nav class="flex flex-row justify-between items-center px-8 py-2">
       <h2 class="text-xl">Bryan Almaraz</h2>
 
-      <ul class="text-lg">
+      <div id="mobileMenuBtn" class="md:hidden cursor-pointer">
+        <div class="h-1 w-8 bg-gray-800"></div>
+        <div class="h-1 w-8 bg-gray-800 mt-1"></div>
+        <div class="h-1 w-8 bg-gray-800 mt-1"></div>
+      </div>
+      <ul id="mobileMenu" class="md:hidden hidden absolute top-0 left-0 h-screen bg-white w-full">
+        <div class="flex flex-row justify-end">
+          <div class="cursor-pointer text-2xl w-10 h-10 m-8 rounded-full border flex flex-col justify-center items-center" id="closeMobileMenu">X</div>
+        </div>
+        <div class="flex flex-col justify-center items-center text-2xl py-8" id="mobileMenuItems">
+          <a class="" href="/#home">Home</a>
+          <a class="" href="/#work">Work</a>
+          <a class="" target="_blank"
+            href="https://docs.google.com/document/d/18GbY45rJM0WRoEYLj75KEytECkM1if94wl6AlWDAIUo/edit?usp=sharing">Resume</a>
+          <a class="" href="/#about">About</a>
+        </div>
+      </ul>
+
+      <ul class="text-lg hidden md:block">
         <a class="" href="/#home">Home</a>
         <a class="px-2" href="/#work">Work</a>
         <a class="" target="_blank"
@@ -115,6 +133,8 @@
       <a href="mailto:bryan.developer96@gmail.com">Email</a>
     </div>
   </footer>
+
+  <script src="/src/js/mobileMenu.js"></script>
 </body>
 
 </html>
