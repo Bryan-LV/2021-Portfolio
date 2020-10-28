@@ -19,8 +19,8 @@
     "start:parcel": "parcel index.html",
     "start": "npm-run-all tailwind:build --parallel tailwind:watch start:parcel",
 
-    "prebuild": "npm run tailwind:build",
-    "build": "parcel build index.html"
+    "prebuild": "NODE_ENV=production npm run tailwind:build",
+    "build": "NODE_ENV=production parcel build index.html"
   },
   "keywords": [],
   "author": "",
