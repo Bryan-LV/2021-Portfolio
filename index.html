@@ -21,7 +21,9 @@
       </div>
       <ul id="mobileMenu" class="md:hidden hidden absolute top-0 left-0 h-screen bg-white w-full">
         <div class="flex flex-row justify-end">
-          <div class="cursor-pointer text-2xl w-10 h-10 m-8 rounded-full border flex flex-col justify-center items-center" id="closeMobileMenu">X</div>
+          <div
+            class="cursor-pointer text-2xl w-10 h-10 m-8 rounded-full border flex flex-col justify-center items-center"
+            id="closeMobileMenu">X</div>
         </div>
         <div class="flex flex-col justify-center items-center text-2xl py-8" id="mobileMenuItems">
           <a class="" href="/#home">Home</a>
@@ -45,8 +47,10 @@
   <!-- HERO -->
   <section class="p-8 md:flex md:flex-row-reverse md:justify-center md:items-center max-w-screen-lg lg:m-auto" id="">
     <div class="text-center md:flex-1">
-      <h1 class="text-5xl lg:text-6xl font-light leading-tight">Hi, I'm <br /> <span class="font-bold lg:text-6xl tracking-wide text-gray-800">Bryan</span></h1>
-      <h3 class="font-secondary bg-lightAccent text-gray-800 rounded-sm py-2 my-2 text-xl lg:text-2xl">FULL-STACK DEV</h3>
+      <h1 class="text-5xl lg:text-6xl font-light leading-tight">Hi, I'm <br /> <span
+          class="font-bold lg:text-6xl tracking-wide text-gray-800">Bryan</span></h1>
+      <h3 class="font-secondary bg-lightAccent text-gray-800 rounded-sm py-2 my-2 text-xl lg:text-2xl">FULL-STACK DEV
+      </h3>
     </div>
     <div class="rounded-sm overflow-hidden md:flex-1">
       <img class="" src="src/assets/grey-portrait.jpg" alt="profile photo of me" />
@@ -59,9 +63,10 @@
     <div class="w-56 bg-white m-auto my-3" style="height:2px"></div>
     <h3 class="text-xl font-semibold text-white">Full-Stack JS Developer</h3>
     <p class="text-gray-200 py-6 max-w-screen-md m-auto lg:text-lg">
-      Hello there! I'm a developer from Las Vegas, NV. I love creating and developing things for the web. 
-      I specialize as a front-end developer, but often build my own backend's. 
-      I enjoy every part of the creative process from design to implementation and am capable of learning anything needed for the job at hand.
+      Hello there! I'm a developer from Las Vegas, NV. I love creating and developing things for the web.
+      I specialize as a front-end developer, but often build my own backend's.
+      I enjoy every part of the creative process from design to implementation and am capable of learning anything
+      needed for the job at hand.
       Aside from programming, I enjoy making music and travelling to strange paradises.
     </p>
   </section>
@@ -81,11 +86,13 @@
           <p class="">Trip wallet is an expense tracker that does currency conversions on the fly with real time
             currency exchange rates. I built this for my own use while traveling around the world because most apps I
             was using at the time were too limited or too complicated for my use case. Technologies used: React,
-            GraphQL/Apollo, MongoDB. <small class="text-small">(Currently in development, allow 10 seconds for server to spin up before logging in)</small></p>
-            <div class="pt-4">
-              <button class="bg-accent button" ><a href="https://tripwallet.netlify.app">Live Project</a></button>
-              <button class="bg-gray-800 text-white py-2 px-8 rounded-sm"><a href="https://github.com/Bryan-LV/tripwallet-client">Github</a></button>
-            </div>
+            GraphQL/Apollo, MongoDB. <small class="text-small">(Currently in development, allow 10 seconds for server to
+              spin up before logging in)</small></p>
+          <div class="pt-4">
+            <button class="bg-accent button"><a href="https://tripwallet.netlify.app">Live Project</a></button>
+            <button class="bg-gray-800 text-white py-2 px-8 rounded-sm"><a
+                href="https://github.com/Bryan-LV/tripwallet-client">Github</a></button>
+          </div>
         </div>
       </div>
     </div>
@@ -97,9 +104,11 @@
         </div>
         <div class="max-w-screen-lg py-2">
           <h2 class="text-3xl py-2">Latino's Rock Shop</h2>
-          <p class="">Latino's Rock Shop is an alternative music store based in Las Vegas, Nevada that supplies merchandise nationwide. I created their E-Commerce store that is now making up 44% of their sales using Wordpress & Woocommerce.</p>
+          <p class="">Latino's Rock Shop is an alternative music store based in Las Vegas, Nevada that supplies
+            merchandise nationwide. I created their E-Commerce store that is now making up 44% of their sales using
+            Wordpress & Woocommerce.</p>
           <div class="pt-4">
-            <button class="button bg-accent" ><a href="https://latinosrockshop.com">Live Project</a></button>
+            <button class="button bg-accent"><a href="https://latinosrockshop.com">Live Project</a></button>
           </div>
         </div>
       </div>
@@ -108,14 +117,34 @@
     <div class="my-4">
       <div class="max-w-screen-md m-auto py-2">
         <div class="rounded-sm overflow-hidden">
+          <img src="/src/assets/spiral-react.png" alt="">
+        </div>
+        <div class="max-w-screen-lg py-2">
+          <h2 class="text-3xl py-2">Spiral</h2>
+          <p class="">Spiral is a webapp that lets you build your own color palettes 
+            or browse through existing palettes for inspiration. You can change the level of hue of an entire palette
+            to get the right shade for your project. It allows for easy copying-to-clipboard and even generates a spectrum of shades for any particular color. Technologies used: ReactJS
+          </p>
+          <div class="pt-4">
+            <button class="button bg-accent"><a href="https://spiral.netlify.app/">Live Project</a></button>
+            <button class="button bg-gray-800"><a href="https://github.com/Bryan-LV/Color-App">Github</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PROJECT 4 -->
+    <div class="my-4">
+      <div class="max-w-screen-md m-auto py-2">
+        <div class="rounded-sm overflow-hidden">
           <img src="/src/assets/covid19-tracker-screenshot.jpg" alt="">
         </div>
         <div class="max-w-screen-lg py-2">
           <h2 class="text-3xl py-2">Covid-19 Tracker</h2>
-          <p class="">The tracker serves data from John Hopkins University CSSE. User can search by country, and shown a bar graph of the data. Technologies used: React and ChartsJS</p>
+          <p class="">The tracker serves data from John Hopkins University CSSE. User can search by country, and shown a
+            bar graph of the data. Technologies used: React and ChartsJS</p>
           <div class="pt-4">
-            <button class="button bg-accent" ><a href="https://covid19-ba.netlify.app/">Live Project</a></button>
-            <button class="button bg-gray-800" ><a href="https://github.com/Bryan-LV/covid-19">Github</a></button>
+            <button class="button bg-accent"><a href="https://covid19-ba.netlify.app/">Live Project</a></button>
+            <button class="button bg-gray-800"><a href="https://github.com/Bryan-LV/covid-19">Github</a></button>
           </div>
         </div>
       </div>
@@ -124,7 +153,7 @@
   <!-- END PROJECTS -->
   <!-- FOOTER -->
   <footer class="bg-mdBlack py-10">
-    <div class="max-w-screen-lg m-auto text-center text-lightAccent font-bold">
+    <div class="max-w-md m-auto text-lightAccent tracking-wide px-4 flex flex-row justify-between items-center">
       <a href="https://www.linkedin.com/in/bryan-almaraz-ab28aa170/" target="_blank"
         rel="noopener noreferrer">Linkedin</a>
       <a href="https://github.com/Bryan-LV" target="_blank" rel="noopener noreferrer">Github</a>
