@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="/src/assets/fire-icon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/styles/tailwind-output.css">
   <title>Bryan Almaraz</title>
@@ -11,15 +12,16 @@
 <body>
   <!-- NAVIGATION -->
   <header class="relative">
-    <nav class="flex flex-row justify-between items-center px-8 py-2">
+    <nav class="flex flex-row justify-between items-center px-8 py-4">
       <h2 class="text-xl">Bryan Almaraz</h2>
 
+      <!-- Mobile menu -->
       <div id="mobileMenuBtn" class="md:hidden cursor-pointer">
         <div class="h-1 w-8 bg-gray-800"></div>
         <div class="h-1 w-8 bg-gray-800 mt-1"></div>
         <div class="h-1 w-8 bg-gray-800 mt-1"></div>
       </div>
-      <ul id="mobileMenu" class="md:hidden hidden absolute top-0 left-0 h-screen bg-white w-full">
+      <ul id="mobileMenu" class="md:hidden hidden absolute top-0 left-0 h-screen bg-white w-full z-50">
         <div class="flex flex-row justify-end">
           <div
             class="cursor-pointer text-2xl w-10 h-10 m-8 rounded-full border flex flex-col justify-center items-center"
@@ -30,47 +32,49 @@
           <a class="" href="/#work">Work</a>
           <a class="" target="_blank"
             href="https://docs.google.com/document/d/18GbY45rJM0WRoEYLj75KEytECkM1if94wl6AlWDAIUo/edit?usp=sharing">Resume</a>
-          <a class="" href="/#about">About</a>
+          <a class="" href="https://dev.to/thee_divide" target="_blank">Articles</a>
         </div>
       </ul>
 
+      <!-- Desktop Menu -->
       <ul class="text-lg hidden md:block">
         <a class="" href="/#home">Home</a>
         <a class="px-2" href="/#work">Work</a>
         <a class="" target="_blank"
           href="https://docs.google.com/document/d/18GbY45rJM0WRoEYLj75KEytECkM1if94wl6AlWDAIUo/edit?usp=sharing">Resume</a>
-        <a class="pl-2" href="/#about">About</a>
+        <a class="px-2" href="https://dev.to/thee_divide" target="_blank">Articles</a>
       </ul>
+
     </nav>
   </header>
-  <!-- END NAVIGATION -->
+
   <!-- HERO -->
-  <section class="p-8 md:flex md:flex-row-reverse md:justify-center md:items-center max-w-screen-lg lg:m-auto" id="">
-    <div class="text-center md:flex-1">
+  <section class="p-8 md:flex md:flex-row-reverse md:justify-center md:items-center max-w-screen-lg lg:m-auto overflow-hidden" id="hero-section">
+    <div class="text-center md:flex-1 pb-4">
       <h1 class="text-5xl lg:text-6xl font-light leading-tight">Hi, I'm <br /> <span
           class="font-bold lg:text-6xl tracking-wide text-gray-800">Bryan</span></h1>
-      <h3 class="font-secondary bg-lightAccent text-gray-800 rounded-sm py-2 my-2 text-xl lg:text-2xl">FULL-STACK DEV
+      <h3 class="font-secondary bg-lightAccent text-gray-800 rounded-sm py-2 my-2 text-xl max-w-lg mx-auto lg:text-2xl">FULL-STACK DEV
       </h3>
-    </div>
-    <div class="rounded-md overflow-hidden md:flex-1">
-      <img class="mx-auto" src="src/assets/profile-photo.jpg" alt="photo of me" />
+      <h4 class="text-sm text-gray-700">Always learning. Always creating.</h4>
     </div>
   </section>
-  <!-- END HERO -->
+
   <!-- ABOUT ME -->
-  <section class="bg-mdBlack px-8 py-12 text-center" id="about">
-    <h1 class="text-accent font-bold text-5xl">About Me</h1>
-    <div class="w-56 bg-white m-auto my-3" style="height:2px"></div>
-    <h3 class="text-xl font-semibold text-white">Full-Stack JS Developer</h3>
-    <p class="text-gray-200 py-6 max-w-screen-md m-auto lg:text-lg">
-      Hello there! I'm a developer from Las Vegas, NV. I love creating and developing things for the web.
-      I specialize as a front-end developer, but often build my own backend's.
-      I enjoy every part of the creative process from design to implementation and am capable of learning anything
-      needed for the job at hand.
-      Aside from programming, I enjoy making music and travelling to strange paradises.
-    </p>
+  <section class="bg-mdBlack px-8 py-12 overflow-hidden">
+    <div  id="about-section">
+        <h1 class="text-accent font-bold text-5xl md:text-center">About Me</h1>
+        <div class="w-56 bg-white md:m-auto my-3" style="height:2px"></div>
+        <h3 class="text-xl font-semibold text-white md:text-center">Full-Stack JS Developer</h3>
+        <p class="text-gray-200 py-6 max-w-screen-md m-auto lg:text-lg">
+          Hello there! I'm a developer originally from Las Vegas, NV. I love creating and developing things for the web.
+          I specialize as a front-end developer, primarily building web apps with React JS (my love). But I often build my own backends using JS as the full stack.
+          I enjoy every part of the creative process from design to implementation and am capable of learning anything
+          needed for the job at hand.
+          Aside from programming, I enjoy making music and travelling to strange paradises.
+        </p>
+    </div>
   </section>
-  <!-- END ABOUT ME -->
+
   <!-- PROJECTS -->
   <section class="text-center py-10 px-8" id="work">
     <h1 class="text-5xl font-bold text-mdBlack">My Work</h1>
@@ -150,7 +154,7 @@
       </div>
     </div>
   </section>
-  <!-- END PROJECTS -->
+
   <!-- FOOTER -->
   <footer class="bg-mdBlack py-10">
     <div class="max-w-md m-auto text-lightAccent tracking-wide px-4 flex flex-row justify-between items-center">
@@ -164,6 +168,7 @@
   </footer>
 
   <script src="/src/js/mobileMenu.js"></script>
+  <script src="/src/js/animate.js"></script>
 </body>
 
 </html>
